@@ -6,7 +6,7 @@ const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
 const connectDB = require('./config/db');
 const { swaggerUi, specs } = require("./config/swagger");
-const skillRoutes = require('./routes/skillRoutes');
+// const skillRoutes = require('./routes/skillRoutes');
 const experienceRoutes = require('./routes/experienceRoutes');
 const projectRoutes = require('./routes/projectRoutes');
 const authRoutes = require('./routes/authRoutes');
@@ -60,7 +60,7 @@ app.use('/api/resume', resumeRoutes);
 app.use('/api/experience', experienceRoutes);
 app.use('/api/projects', projectRoutes);
 app.use('/api/about', aboutRoutes);
-app.use('/api/skills', skillRoutes);
+// app.use('/api/skills', skillRoutes);
 app.use('/api/contact', contactRoutes);
 app.use('/api/home', homeRoutes);
 
